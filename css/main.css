@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100vh;
+}
+
+a.wave-effect {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  line-height: 35px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: darkorange;
+  overflow: hidden;
+  box-shadow: 0 1px 4px 0px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+a.wave-effect:hover {
+  background-color: orange;
+  box-shadow: 0 2px 4px 0px rgba(0,0,0,0.3);
+}
+
+@keyframes wave {
+  from {
+    transform: scale3d(0.3,0.3,0.3);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale3d(1.2,1.2,1.2);
+    opacity: 0;
+  }
+}
